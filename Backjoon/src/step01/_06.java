@@ -14,9 +14,10 @@ public class _06 {
 		
 		int A = sc.nextInt();
 		int B = sc.nextInt();
-		float C; C = A / B;
 		
-		System.out.println(C);
+		if(A > 0 && B < 10);
+				
+		System.out.println((double)A / B);
 	}
 
 }
