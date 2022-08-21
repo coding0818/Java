@@ -14,9 +14,9 @@ public class _06 {
 		
 		int A = sc.nextInt();
 		int B = sc.nextInt();
+		float C; C = A / B;
 		
-		
-		System.out.println(A / B);
+		System.out.println(C);
 	}
 
 }
