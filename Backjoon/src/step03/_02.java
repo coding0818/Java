@@ -13,16 +13,14 @@ public class _02 {
 		Scanner sc = new Scanner(System.in);
 		
 		int T = sc.nextInt();
-		int A = sc.nextInt();
-		int B = sc.nextInt();
 		
-		if(A > 0 && B > 0);
-		
-		for(int i=1; i<=5; i++) {
-			
-			int C = A + B;
-			System.out.println(C);
+		for(int i=1; i<=T; i++) {
+			int A = sc.nextInt();
+		    int B = sc.nextInt();
+		    if(A > 0 && B < 10);
+		    System.out.println(A + B);
 		}
+		
 		
 	}
 
