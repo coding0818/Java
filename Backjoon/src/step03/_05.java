@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 import java.io.IOException;
 
 /*
@@ -17,22 +18,21 @@ public class _05 {
 		
 		int T = Integer.parseInt(bf.readLine());
 		if(T <= 1000000);
-		int a;
-		int b;
-		
-		
-		for(int i=1; i<=T; i++) {
-		a = Integer.parseInt(bf.readLine());
-		b = Integer.parseInt(bf.readLine());
-		
-		if(a >= 1 && a<= 1000 && b >= 1 && b<= 1000 );
 		
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		int d = a + b;
-		bw.write(d);
+		
+		for(int i=1; i<=T; i++) {
+		StringTokenizer st = new StringTokenizer(bf.readLine());
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		if(a >= 1 && a<= 1000 && b >= 1 && b<= 1000 );
+		
+	    bw.write(a+b+"\n");
+		
+		}
+		bf.close();
 		bw.flush();
 		bw.close();
-		}
 	}
 
 }
