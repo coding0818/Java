@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 /*
  * 날짜 : 2022/08/23
  * 이름 : 박가영
- * 내용 : 3단계 7번 문제
+ * 내용 : 3단계 7번 A+B를 더 아름답게 출력하는 문제2
  */
 public class _07 {
 	public static void main(String[] args) throws IOException {

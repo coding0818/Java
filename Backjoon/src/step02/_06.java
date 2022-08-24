@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 6번 문제
+ * 내용 : 2단계 6번 범위가 더 넓은 시간 계산 문제
  */
 public class _06 {
 	public static void main(String[] args) {

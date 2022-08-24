@@ -10,7 +10,7 @@ import java.io.IOException;
 /*
  * 날짜 : 2022/08/22
  * 이름 : 박가영
- * 내용 : 3단계 5번 문제
+ * 내용 : 3단계 5번 빠르게 입력받고 출력하는 문제
  */
 public class _05 {
 	public static void main(String[] args) throws IOException {

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 2번 문제
+ * 내용 : 2단계 2번 시험 점수를 성적으로 바꾸는 문제
  */
 public class _02 {
 	public static void main(String[] args) {

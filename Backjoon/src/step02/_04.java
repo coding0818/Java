@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 4번 문제
+ * 내용 : 2단계 4번 점이 어느 사분면에 있는지 알아내는 문제
  */
 public class _04 {
 	public static void main(String[] args) {

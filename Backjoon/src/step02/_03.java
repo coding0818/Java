@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 3번 문제
+ * 내용 : 2단계 3번 윤년을 판별하는 문제
  */
 public class _03 {
 	public static void main(String[] args) {

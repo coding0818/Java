@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 1단계 12번 문제
+ * 내용 : 1단계 12번 빈 칸에 들어갈 수를 구하는 문제
  */
 public class _12 {
 	public static void main(String[] args) {

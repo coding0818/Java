@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
 * 날짜 : 2022/08/23
 * 이름 : 박가영
-* 내용 : 3단계 10번 문제
+* 내용 : 3단계 10번 for과 if를 같이 쓰는 문제
  */
 public class _10 {
 	public static void main(String[] args) {

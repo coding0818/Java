@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 5번 문제
+ * 내용 : 2단계 5번 시간 계산 문제
  */
 public class _05 {
 	public static void main(String[] args) {

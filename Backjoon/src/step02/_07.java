@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/22
  * 이름 : 박가영
- * 내용 : 2단계 7번 문제
+ * 내용 : 2단계 7번 조건에 따라 상금을 계산하는 문제
  */
 public class _07 {
 	public static void main(String[] args) {

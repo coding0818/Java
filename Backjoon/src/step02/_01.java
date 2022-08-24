@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/21
  * 이름 : 박가영
- * 내용 : 2단계 1번 문제
+ * 내용 : 2단계 1번 두 수를 비교한 결과를 출력하는 문제
  */
 public class _01 {
 	public static void main(String[] args) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * 날짜 : 2022/08/19
  * 이름 : 박가영
- * 내용 : 1단계 6번 문제 
+ * 내용 : 1단계 6번 나눗셈 문제 
  */
 public class _06 {
 	public static void main(String[] args) {
