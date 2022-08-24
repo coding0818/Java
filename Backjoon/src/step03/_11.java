@@ -11,17 +11,14 @@ public class _11 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		
-		for (int i=1; i>=1; i++){
-			
-			int A = s.nextInt();
-			int B = s.nextInt();
-			if( B < 10);
-			System.out.println(A+B);
-		while(true) {
+		int A = s.nextInt();
+		int B = s.nextInt();
 		
-			if (A == 0 && B == 0) {
-				
-				break;}
+		
+		while(A != 0 && B != 0){
+			System.out.print(A+B);
+			A = s.nextInt();
+			B = s.nextInt();
 			
 			
 		  }
@@ -30,4 +27,4 @@ public class _11 {
 	    }
 
 }
-}
+
