@@ -12,10 +12,10 @@
 - sub1.조건문 if 실습
 - sub2.조건문 switch 실습
 - sub3.반복문 for 실습
-- sub4.반복문 while 실습# Java
+- sub4.반복문 while 실습
 
 ## Ch04.배열(Array)과 메서드(Method)
 - sub1.배열 array 실습
 - sub2.method 실습
 - sub3.methodtype 실습
-- sub4.methodoverloading 실습
+- sub4.methodoverloading 실습# Java
