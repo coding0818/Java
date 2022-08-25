@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
+import java.util.HashSet;
 
 /*
 * 날짜 : 2022/08/25
@@ -18,20 +19,21 @@ public class _03 {
 		BufferedWriter w = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int n[] = new int[10];
-		int x = 0;
+		int y;
 		for(int i=0; i<n.length; i++) {
 			n[i] = Integer.parseInt(b.readLine());
-			int y = n[i] % 42;
-			int m[] = new int[]{y};
+			if(y == n[i] % 42) {
+			int[] m = {y};
+			HashSet<int> hashSet = new HashSet<>(Arrays.asList(m));
+			int[] result = hashSet.toArray(new int[0]);
 			
-			
-		}
+			w.write(result.length+"\n");
+			}
+	     }
 		
-		w.write(x+"\n");
 		b.close();
 		w.flush();
 		w.close();
-		
-	}
 
+	 }	
 }
