@@ -1,4 +1,7 @@
 package step04;
+
+import java.util.Scanner;
+
 /*
 * 날짜 : 2022/08/28
 * 이름 : 박가영
@@ -6,6 +9,31 @@ package step04;
  */
 public class _06 {
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int c = sc.nextInt();
+		int[] n = new int [c];
+		
+		for(int i=0; i<c; i++) {
+			n[i] = sc.nextInt();
+		}
+		int score[] = new int [n[c]];
+		
+		for(int k=0;k<score.length;k++) {
+			score[k] = sc.nextInt(); 
+			int total = 0;
+			double avg = 0;
+			double p = 0;
+			for(int sum : score) {
+				total += sum;
+			}
+			avg = total / score.length;
+			if(avg > score[k]){
+				p++;
+			} p = p/score.length*100;
+			System.out.println(p);
+		}
+		
 		
 		
 	}

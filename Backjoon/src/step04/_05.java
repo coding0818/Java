@@ -11,24 +11,25 @@ public class _05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int n = sc.nextInt();
+		int n = Integer.parseInt(sc.nextLine());
 		String arr[] = new String [n];
-		int score = 0;
-		int sum = 0;
+		
 		for(int i=0; i<n; i++) {
+			int score = 0;
+			int sum = 0;
 			arr[i] = sc.nextLine();
 			String[] OX = arr[i].split("");
 			for(int k=0; k<OX.length; k++) {
-				if(OX[k]=="O") {
+				if(OX[k].equals("O")) {
 					score++;
 					sum += score;
 				}
-				else {
-					score = 0;
-				}
-			}
+				else score = 0;
+				
+				
+			} System.out.println(sum);
 		}
-		System.out.println(sum);
+		
 	}
 
 }
