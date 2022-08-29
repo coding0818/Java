@@ -13,29 +13,33 @@ public class _06 {
 		
 		int c = sc.nextInt();
 		int[] n = new int [c];
+		int score[] = new int [n[0]];
+		int total = 0;
+		double avg = 0.0;
+		double p = 0.0;
 		
 		for(int i=0; i<c; i++) {
 			n[i] = sc.nextInt();
-		}
-		int score[] = new int [n[c]];
-		
-		for(int k=0;k<score.length;k++) {
-			score[k] = sc.nextInt(); 
-			int total = 0;
-			double avg = 0;
-			double p = 0;
-			for(int sum : score) {
-				total += sum;
+			for(int k=0; k<n.length;k++) {
+				score[k] = sc.nextInt();
 			}
-			avg = total / score.length;
-			if(avg > score[k]){
+		}
+			
+		
+		for(int sum : score) {
+				total += sum;
+		}
+		avg = total / score.length;
+			
+		for(int j=0; j<score.length;j++) {
+			if(avg > score[j]){
 				p++;
-			} p = p/score.length*100;
-			System.out.println(p);
+			    p = p/score.length*100;
+		    }
 		}
 		
-		
-		
+		System.out.println(p);
+			
 	}
-
+			
 }
