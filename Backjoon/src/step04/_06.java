@@ -12,33 +12,33 @@ public class _06 {
 		Scanner sc = new Scanner(System.in);
 		
 		int c = sc.nextInt();
-		int[] n = new int [c];
-		int score[] = new int [n[0]];
-		int total = 0;
-		double avg = 0.0;
-		double p = 0.0;
+		int n;
+		
 		
 		for(int i=0; i<c; i++) {
-			n[i] = sc.nextInt();
-			for(int k=0; k<n.length;k++) {
+			n = sc.nextInt();
+			int score[] = new int [n];
+			for(int k=0; k<n;k++) {
 				score[k] = sc.nextInt();
+				
+				int total = 0;
+				double avg = 0.0;
+				double p = 0.0;
+				for(int sum : score) {
+					total += sum;
+			    }
+			    avg = total / score.length;
+				
+			
+				while(avg > score[k]){
+					p++;
+				    p = p/score.length*100;
+				    System.out.println(p);
+				    break;
+			    }
 			}
+				
 		}
-			
-		
-		for(int sum : score) {
-				total += sum;
-		}
-		avg = total / score.length;
-			
-		for(int j=0; j<score.length;j++) {
-			if(avg > score[j]){
-				p++;
-			    p = p/score.length*100;
-		    }
-		}
-		
-		System.out.println(p);
 			
 	}
 			
