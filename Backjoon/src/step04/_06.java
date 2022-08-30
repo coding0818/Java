@@ -26,15 +26,13 @@ public class _06 {
 			
 			avg = total / score.length;
 			
-			while(avg < score[i]){
+			for(int j=0; j<score.length;j++){
+				if(avg < score[j]) {
 				p++;
-			    p = p/score.length*100;
-			    System.out.println(String.format("%.3f", p));
-			    if(avg > score[i]) {
-			    	break;
-			    }
+				}
 		    }
-				
+			p = p/score.length*100;
+		    System.out.println(String.format("%.3f", p)+"%");	
 		}
 			
 	}
