@@ -6,22 +6,27 @@ package step05;
  */
 public class _02 {
 	public static void main(String[] args) {
-		System.out.print(selfNumber(1));
+		selfNumber();
 	}
 
-	public static int selfNumber(int n) {
-		int n1=0;
-		for(n=1; n<=10000; n++) {
+	public static void selfNumber() {
+		int n1;
+		int[]a= new int [] {};
+		for(int n=1; n<=10000; n++) {
 			n1 = n + (n/10) + (n%10);
+			a[n-1]=n1;
 		}
 		
-		int[]a= {n1};
-		int y[]=;
+		int[]y= new int[10000];
+		for(int j=0;j<y.length;j++) {
+		    y[j]=j+1;	
+		}
+		
 		for(int i=0; i<a.length; i++) {
-			if(a[i] != n1) {
-				y = a[i];	
+			if(y[i] != a[i]) {
+				System.out.println(y[i]);	
 			}
 		}
-		return y[];
+		
 	}
 }
