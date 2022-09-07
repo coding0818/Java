@@ -11,31 +11,33 @@ public class _01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		long a = sc.nextLong();
-		long b = sc.nextLong();
-		long c = sc.nextLong();
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
 		
 		breakpoint(a,b,c);
 		
 	}
 	
-	public static void breakpoint(long a, long b, long c) {
-		int i = 1;
-		long n1 = a+b*i;
-		long n2 = c*i;
+	
+	public static void breakpoint(int a, int b, int c) {
+		int n1 = a/(c-b);
+		int i[] = new int[2100000001];
 		
-		if(b>c) {
-			System.out.println("-1");
+		for(int k=0;k<i.length;k++) {
+			i[k]=k+1;
 		}
-		else{
-			for(i=1; i>0;i++) {
-			if(n1<n2) 
-				System.out.println(i);
-				break;
-			
-		    }
+		if(b>=c) {
+			System.out.println("-1");
+		}		
+		else{for(int j=0; j<i.length;j++) {
+		   if(n1<i[j]) {
+			   System.out.println(i[j]);
+			   break;
+		   }
+		}   
+	   }
 		
-	    }
 
     }
 }
