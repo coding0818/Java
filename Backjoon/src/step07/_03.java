@@ -1,5 +1,6 @@
 package step07;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 /*
@@ -12,22 +13,24 @@ public class _03 {
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
 		
-		int r1 = self(1);
+		int v1 = self(1);
 		
 		
 	}
 	
-	public static void self(int n) {
-		int a[]= new int[]{};
-		for(int i=0; i>=0; i++) {
-			a[i] = n;
-			
-			int b=0;
-			
-		}
+	public static int self(int n) {
+	
+		int a=n;
+		int b=a+1;
+		int c=b+1;
+		
+		int[] arr = {a, b, c};
+		
+		return arr[n];
 		
 		
-		return a[0];
+		
+		
 	}
 
 }
