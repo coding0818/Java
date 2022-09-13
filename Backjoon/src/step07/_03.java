@@ -15,19 +15,26 @@ public class _03 {
 		int a[] = new int[x];
 		int b[] = new int[x];
 		
-		for(int i=0;i<a.length;i++){
-			a[0] = 1;
-			
-			for(int k=0;k<=i;k++) {
-				i += k+1;
+		a[0] = 1;
+		
+		for(int i=1;i>=1;i++) {
+			for(int num = 1;num<a.length;num++) {
+				for(int n=2; n<a.length; n++){
+					num += n;
+					a[num] = i;	
+					if((x-1) == num) {
+						System.out.println(a[num]);	
+						break;
+					}
+				}	
 			}
 		}
+		
+		
 		
 		for(int j=0;j<b.length;j++) {
 			
 		}
-		
-		System.out.println(a[x]+"/"+b[x]);
 		
 		
 		
