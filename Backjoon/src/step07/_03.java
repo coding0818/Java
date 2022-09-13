@@ -12,25 +12,27 @@ public class _03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
+		int a[] = new int[x];
+		int b[] = new int[x];
 		
-		int v1 = self(1);
+		for(int i=0;i<a.length;i++){
+			a[0] = 1;
+			
+			for(int k=0;k<=i;k++) {
+				
+			}
+		}
+		
+		for(int j=0;j<b.length;j++) {
+			
+		}
+		
+		System.out.println(a[x]+"/"+b[x]);
+		
 		
 		
 	}
 	
-	public static int self(int n) {
 	
-		int a=n;
-		int b=a+1;
-		int c=b+1;
-		
-		int[] arr = {a, b, c};
-		
-		return arr[n];
-		
-		
-		
-		
-	}
 
 }
