@@ -19,7 +19,7 @@ public class _03 {
 			a[0] = 1;
 			
 			for(int k=0;k<=i;k++) {
-				
+				i += k+1;
 			}
 		}
 		
