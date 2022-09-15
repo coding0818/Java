@@ -12,14 +12,13 @@ public class _03 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
-		int a[] = new int[x];
-		int b[] = new int[x];
-		
-		a[0] = 1;
+		int a[] = new int[] {};
+		int b[] = new int[] {};
 		
 		for(int i=1;i>=1;i++) {
-			for(int num = 1;num<a.length;num++) {
-				for(int n=2; n<a.length; n++){
+			for(int num = 1;num<=x;num++) {
+				for(int n=2; n>=2; n++){
+					a[0] = 1;
 					num += n;
 					a[num] = i;	
 					if((x-1) == num) {
