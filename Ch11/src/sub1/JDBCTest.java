@@ -32,10 +32,6 @@ public class JDBCTest {
 		}else {
 			System.out.println("데이터베이스 접속 실패!");
 		}
-		// 3단계
-		// 4단계
-		// 5단계
-		// 6단계
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
