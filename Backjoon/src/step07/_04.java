@@ -45,6 +45,17 @@ public class _04 {
 		}
 		
 		
+		public static int top(int a, int b, int v) {
+			
+			if(a==v) {
+				return 1;
+			}else {
+				int v1 = (a-b);
+				return n;	
+			}
+			
+		}
+		
 		
 	}
 
