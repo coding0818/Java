@@ -25,16 +25,10 @@ public class _04 {
 			int b = Integer.parseInt(st.nextToken());
 			int v = Integer.parseInt(st.nextToken());
 			
-			for(int n=1; n>=1; n++) {
-				int v1 = (a-b)*(n+1);
-				int v2 = v * n;
-				
-				if(v1>v2) {
-					System.out.print(n);
-					break;
-				}
-			}
-			
+			int n;
+			n = v-a+1;
+						
+			bw.write(Integer.parseInt(n));
 			br.close();
 			bw.close();
 			
@@ -44,19 +38,6 @@ public class _04 {
 			e.printStackTrace();
 		}
 		
-		
-		public static int top(int a, int b, int v) {
-			
-			if(a==v) {
-				return 1;
-			}else {
-				int v1 = (a-b);
-				return n;	
-			}
-			
-		}
-		
-		
 	}
-
+	
 }
