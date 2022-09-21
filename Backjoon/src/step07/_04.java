@@ -15,7 +15,6 @@ import java.util.StringTokenizer;
 public class _04 {
 	public static void main(String[] args) {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		
 		try {
@@ -24,19 +23,20 @@ public class _04 {
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			int v = Integer.parseInt(st.nextToken());
+			double v1 = v-b;
+			double v2 = a-b;
 			
-			if(v-a == 1) {
-				System.out.println(2);
-			}else if{
-				
+			double n = Math.ceil(v1/v2);
+			long top = (long) n;
+			
+			
+			if(v == a) {
+				System.out.println(1);
+			}else{
+				System.out.println(top);
 			}
 			
-			int n;
-			(a*n)-b*(n-1) = a*n -b*n +b = (a-b)*n+b;
-						
-			System.out.println(n);
 			br.close();
-			bw.close();
 			
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
