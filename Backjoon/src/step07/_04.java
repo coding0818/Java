@@ -25,10 +25,16 @@ public class _04 {
 			int b = Integer.parseInt(st.nextToken());
 			int v = Integer.parseInt(st.nextToken());
 			
+			if(v-a == 1) {
+				System.out.println(2);
+			}else if{
+				
+			}
+			
 			int n;
-			n = v-a+1;
+			(a*n)-b*(n-1) = a*n -b*n +b = (a-b)*n+b;
 						
-			bw.write(Integer.parseInt(n));
+			System.out.println(n);
 			br.close();
 			bw.close();
 			
