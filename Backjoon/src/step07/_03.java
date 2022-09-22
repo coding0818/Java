@@ -1,7 +1,9 @@
 package step07;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Array;
-import java.util.Scanner;
 
 /*
  * 날짜 : 2022/09/08
@@ -9,33 +11,17 @@ import java.util.Scanner;
  * 내용 : 7단계 3번 분수의 순서에서 규칙을 찾는 문제
  */
 public class _03 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int x = sc.nextInt();
-		int a[] = new int[] {};
-		int b[] = new int[] {};
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int x = Integer.parseInt(br.readLine());
+		String a[] = new String [x];
 		
-		for(int i=1;i>=1;i++) {
-			for(int num = 1;num<=x;num++) {
-				for(int n=2; n>=2; n++){
-					a[0] = 1;
-					num += n;
-					a[num] = i;	
-					if((x-1) == num) {
-						System.out.println(a[num]);	
-						break;
-					}
-				}	
-			}
+		
+		for(int n=0; n<a.length; n++) {
+			a[0] = 1+"/"+1;
+			a[1] = 1+"/"+2;
+			a[2] = 2+"/"+1;
 		}
-		
-		
-		
-		for(int j=0;j<b.length;j++) {
-			
-		}
-		
-		
 		
 	}
 	
