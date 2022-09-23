@@ -21,21 +21,21 @@ public class _03 {
 		
 		for(int j=0; j<=a.length; j++) {
 			count += j;
-			if(count > x) {
+			
+			if(j % 2 == 0 && count >= x) {
 				n = count-x;
-				if(n != -1) {
-					a[n] = j-n;
-					b[n] = n+1;
-					System.out.println(a[n]+"/"+b[n]);
-				}else {
-					System.out.println("1/1");
-				}
+				a[n] = j-n;
+				b[n] = n+1;
+				System.out.println(a[n]+"/"+b[n]);
 				break;
-			}else if(count == x) {
-				a[n] = j;
-				System.out.println(a[n]+"/1");
+			}else if(j % 2 == 1 && count>=x) {
+				n = count-x;
+				a[n] = n+1;
+				b[n] = j-n;
+				System.out.println(a[n]+"/"+b[n]);
 				break;
 			}
+			
 		}
 		
 		br.close();
