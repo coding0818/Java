@@ -22,9 +22,14 @@ public class _05 {
 			int a = n % h;
 			double b1 = (double)n/h;
 			double b = Math.ceil(b1);
+			int room;
 			
-			int room = (int) (a*100+b);
-			System.out.println(room);
+			if(a != 0) {
+				room = (int) (a*100+b);	
+			}else {
+				room = (int) (100+b);
+			}
+			System.out.println(room);			
 		}
 		
 	}
