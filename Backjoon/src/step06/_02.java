@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 /*
  * 날짜 : 2022/09/28
  * 이름 : 박가영
- * 내용 : 6단계 2번
+ * 내용 : 6단계 2번 정수를 문자열로 입력받는 문제
  */
 public class _02 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -20,15 +20,22 @@ public class _02 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		int n = Integer.parseInt(br.readLine());
-		int n1;
-
-		StringTokenizer st = new StringTokenizer(br.readLine());
+		String n1 = br.readLine();
 		
-		for(int j=1; j<=n; j++) {
-			n1 = Integer.parseInt(st.nextToken());
+		String[] s = n1.split("");
+		String total;
+		int sum = 0;
+		
+		for(int i=0; i<s.length; i++) {
+			int num = Integer.parseInt(s[i]);
+			sum += num;
 		}
+		total = Integer.toString(sum);
 		
+		bw.write(total);
 		
-		
+		br.close();
+		bw.flush();
+		bw.close();
 	}
 }
