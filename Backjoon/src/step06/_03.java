@@ -20,14 +20,17 @@ public class _03 {
 							"s","t","u","z","w","x","y","z"};
 		
 		for(int i=0; i<alpabet.length; i++) {
-			for(int j=0; j<str.length; j++) {
-				if(alpabet[i].equals(str[j])) {
-					System.out.println(j);
-				}else if(alpabet[i].equ) {
-					System.out.println("-1");
+			boolean a = true;
+			for(int j=0; j<str.length;j++) {
+				a = alpabet[i].equals(str[j]);
+				if(a==true) {
+					System.out.print(" "+j+" ");
+					break;
 				}
 			}
-			
+			if(a==false) {
+				System.out.print(" -1 ");
+			}
 		}
 		
 	}
