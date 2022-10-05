@@ -1,7 +1,7 @@
 package step05;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 /*
  * 날짜 : 2022/08/30
@@ -10,28 +10,31 @@ import java.util.List;
  */
 public class _02 {
 	public static void main(String[] args) {
-		ArrayList<Integer> arr = new ArrayList<Integer>();
-		ArrayList<Integer> self = new ArrayList<Integer>();
+		ArrayList<Integer> arr = new ArrayList<>();
+		ArrayList<Integer> self = new ArrayList<>();
+		ArrayList<Integer> fin = new ArrayList<>();
 		
-		for(int i=1; i<=10000; i++) {
-			arr.add(i);
+		for(int i=0; i<10000; i++) {
+			arr.add(i+1);
+			fin.add(i+1);
 		}
 		
 		for(int num=1; num<=10000; num++) {
 			self.add(num + (num/1000) + (num/100)%10 + (num/10)%10 + num % 10);
 		}
 		
-		List<Integer> result = new ArrayList<Integer>();
-		for(int i=1; i<self.size(); i++) {
-			for(int j=1; j<arr.size(); j++) {
+		for(int i=0; i<self.size(); i++) {
+			for(int j=0; j<arr.size(); j++) {
 				if(!self.get(i).equals(arr.get(j))) {
-					result.add(arr.get(i));
-					System.out.println(result.get(i));
+					fin.set(j, 0);
 				}	
 			}
-			
 		}
-		
+		for(int i=0; i<fin.size(); i++) {
+			if(fin.get(i)!=0) {
+				System.out.println(fin.get(i));
+			}
+		}
 		
 		
 	}
